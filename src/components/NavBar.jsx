@@ -1,12 +1,11 @@
 import React from "react";
-import './NavBar.css'
 
 const NavBar=()=>{
     return(
         <>
         <div>
         <nav>
-            <h1>Top Courses</h1>
+            <h1 className="text-red-700">Top Courses</h1>
         </nav>
     </div>
         </>

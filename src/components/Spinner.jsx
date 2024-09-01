@@ -6,7 +6,7 @@ const Spinner=()=>{
     return(
         <div className="flex flex-col item-center space-y-2">
             <div className="loader"></div>
-            <p className="text-bgDark text-lg font-semibold">Loading......</p>
+            <p className="text-bgDark text-lg font-semibold"></p>
         </div>
     )
 }
