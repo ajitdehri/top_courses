@@ -18,20 +18,31 @@ const Card = (props) => {
     }
     let course = props.course;
     return (
-        <div>
-            <div>
-                <img src={course.image.url} alt="" />
-            </div>
-            <p>{course.title}</p>
-            <p>{course.description}</p>
-            <button onClick={handleLike}>
-                {
-                    liked ? <FcLike /> : <FcLikePlaceholder />
-                }
+        <div className="w-[300px] bg-bgDark bg-opacity-80 rounded-md overflow-hidden">
+            <div className="relative ">
+                <img src={course.image.url} alt="Photo"></img>
+                <div className="w-[60px] h=[42px] bg-white  absolute right-2 grid place-items-center bottom-[-12px] rounded-full ">
+                    <button onClick={handleLike}>
+                        {
+                            liked ? <FcLike fontSize="1.76rem" /> : <FcLikePlaceholder fontSize="1.75rem" />
+                        }
 
-            </button>
-            {/* <Spinner/> */}
+                    </button>
+
+                </div>
+            </div>
+            <div className="p-4">
+                <p className="text-white font-semibold text-lg leading-6">{course.title}</p>
+                <p className="mt-2 text-white">
+                     {
+                     course.description.length > 100 ?(course.description.substr(0.100)+"..."):
+                     (course.description)
+                     }
+                </p>
+
+            </div>
         </div>
+
     )
 
 }

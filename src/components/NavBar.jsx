@@ -4,8 +4,8 @@ const NavBar=()=>{
     return(
         <>
         <div>
-        <nav>
-            <h1 className="text-red-700">Top Courses</h1>
+        <nav className="bg-bgDark py-4">
+            <h1 className="text-white text-center font-bold text-3xl">Top Courses</h1>
         </nav>
     </div>
         </>
