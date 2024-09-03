@@ -18,10 +18,10 @@ const Card = (props) => {
     }
     let course = props.course;
     return (
-        <div className="w-[300px] bg-bgDark bg-opacity-80 rounded-md overflow-hidden">
+        <div className="w-[300px] h-[390px] bg-bgDark bg-opacity-80 rounded-md overflow-hidden">
             <div className="relative ">
                 <img src={course.image.url} alt="Photo"></img>
-                <div className="w-[60px] h=[42px] bg-white  absolute right-2 grid place-items-center bottom-[-12px] rounded-full ">
+                <div className="w-[50px] h-[45px] bg-white  absolute right-2 grid place-items-center bottom-[-12px] rounded-full">
                     <button onClick={handleLike}>
                         {
                             liked ? <FcLike fontSize="1.76rem" /> : <FcLikePlaceholder fontSize="1.75rem" />

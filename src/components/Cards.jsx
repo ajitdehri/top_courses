@@ -18,6 +18,10 @@ const Cards = (props) => {
             // console.log("array view",allcourses);
             return allcourses;
         }
+        else if(category==="Liked Courses"){
+            let array=[];
+            
+        }
         else {
             // console.log(courses[category]);
             return courses[category];

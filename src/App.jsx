@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import './App.css'
 import { apiurl, filterData } from './data'
 import NavBar from './components/NavBar'
 import Filter from './components/Filters'
